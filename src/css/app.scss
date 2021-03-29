@@ -1,0 +1,26 @@
+// app global css in SCSS form
+.text-grand-hotel {
+    font-family: 'Grand Hotel', 'Roboto';
+ }
+ .small-screen-only {
+   @media (max-width: $breakpoint-xs-max) {
+       display: block;
+   }
+   @media (min-width: $breakpoint-sm-min) {
+       display: none;
+   }
+}
+
+ .large-screen-only {
+    @media (min-width: $breakpoint-sm-min) {
+       display: block;
+    }
+    @media (max-width: $breakpoint-xs-max) {
+        display: none;
+    }
+ }
+
+ .constrain {
+   max-width: 900px;
+   margin: 0 auto; 
+ }
